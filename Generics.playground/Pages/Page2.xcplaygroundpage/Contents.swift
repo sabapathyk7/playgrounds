@@ -2,6 +2,7 @@
 
 import Foundation
 import UIKit
+// Adding constraints to the associatedtype with Equatable protocol
 func isEqual<T>(_ a: T, _ b: T) -> Bool where T: Equatable {
     return a == b
 }
@@ -46,4 +47,3 @@ let square = Square()
 
 let circleDrawing: String = circle.draw()
 let squareDrawing: UIColor = square.draw()
-
