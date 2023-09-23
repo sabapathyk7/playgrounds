@@ -9,5 +9,7 @@
         <page name='NestedPage3'/>
         <page name='NestedTypes'/>
         <page name='GenericsInterview'/>
+        <page name='NestedFunctions'/>
+        <page name='ClosureInterview'/>
     </pages>
 </playground>
