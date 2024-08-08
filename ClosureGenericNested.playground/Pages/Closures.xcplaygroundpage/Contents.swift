@@ -64,9 +64,8 @@ reversedNames = names.sorted(by: >)
 // Trailing Closures
 // way to write cleaner and more readable code when using functions or methods that takes closures as arguments
 func performAction(action: () -> Void) {
-
+    action()
 }
-// Without Trailing Closure
 performAction {
 
 }
@@ -77,6 +76,8 @@ performAction {
 
 
 names.sorted { $0 > $1}
+
+
 
 
 //Capturing Values

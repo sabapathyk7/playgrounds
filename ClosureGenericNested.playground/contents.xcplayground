@@ -11,5 +11,10 @@
         <page name='GenericsInterview'/>
         <page name='NestedFunctions'/>
         <page name='ClosureInterview'/>
+        <page name='HigherOrder'/>
+        <page name='Concurrency'/>
+        <page name='ConcurrencyTopics'/>
+        <page name='Tasks'/>
+        <page name='GCD'/>
     </pages>
 </playground>
