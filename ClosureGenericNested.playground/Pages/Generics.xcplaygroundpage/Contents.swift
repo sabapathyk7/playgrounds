@@ -39,7 +39,6 @@ swapTwoStrings(&str1 ,&str2)
 print(str1, str2)
 
 // without third variable
-
 func swapTwoInt(_ a: inout Int, _ b: inout Int) {
     (a,b) = (b,a)
 }
@@ -63,6 +62,9 @@ func swapTwoValue<T>(_ a: inout T, _ b: inout T) {
 var d1 = 2.52413132
 var d2 = 7.77837812
 swapTwoValue(&d1, &d2)
+var d3 = "Saba"
+var d4 = "Pathy"
+swapTwoValue(&d3, &d4)
 print(d1, d2)
 
 /*
@@ -134,6 +136,7 @@ protocol A {
 
 // Non Generic Int Stack
 struct IntStack: A {
+    typealias Element = Int
     var items: [Element] = []
     mutating func push(_ item: Element) {
         items.append(item)
@@ -141,7 +144,6 @@ struct IntStack: A {
     mutating func pop() -> Element {
         items.removeLast()
     }
-    typealias Element = Int
     mutating func append(_ element: Element) {
         self.push(element)
     }
@@ -187,4 +189,7 @@ stackStr.pop()
 stackStr.push("Saba")
 stackStr.append("Meat")
 print(stackStr)
+
+// Use Generics with JSON Parsing
+// AssociatedType
 

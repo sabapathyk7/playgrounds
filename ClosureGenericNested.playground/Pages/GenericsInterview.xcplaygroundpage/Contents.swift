@@ -2,9 +2,6 @@
 
 import Foundation
 
-var greeting = "Hello, playground"
-
-//: [Next](@next)
 /*
     What is Generics in swift and how useful in the applications?
 
